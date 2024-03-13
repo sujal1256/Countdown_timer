@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="icon" href="/favicon.ico">
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Countdown Timer</h1>
+    <div class="inputs">
+        <div class="date-box input-box">
+            <p>Enter Date</p>
+            <input type="date" class="date input-fields" name="" id="">
+        </div>
+        <div class="time-box input-box">
+            <p>Enter Time</p>
+            <input type="time" class="time input-fields" name="" id="">
+        </div>
+    </div>
+    <div class="button-box">
+        <!-- <button class="stop-timer btn"><p>Stop</p></button> -->
+        <button class="run-timer btn"><p>Run</p></button>
+        <button class="reset-timer btn"><p>Reset</p></button>
+    </div>
+    <div class="display-box">
+        <div>
+            <!-- day -->
+            <p class="display-text day">Days</p>
+            <div class="display" id="countdown-days">
+                00
+            </div>
+        </div>
+        <div>
+            <!-- hours -->
+            <p class="display-text hour">Hours</p>
+            <div class="display" id="countdown-hours">
+                00
+            </div>
+        </div>
+        <div>
+            <p class="display-text minute">Minutes</p>
+            <div class="display" id="countdown-minutes">
+                00
+            </div>
+        </div>
+        <div>
+            <p class="display-text second">Seconds</p>
+            <div class="display" id="countdown-seconds">
+                00
+            </div>
+        </div>
+        
+    </div>
+    <div class="timesup">
+        <div>
+            <p>Time's up</p>
+            <!-- <img src="bell-icon.png" alt="">
+             -->
+             <span class="material-symbols-outlined">
+                notifications
+                </span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

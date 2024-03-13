@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    background-color: rgb(29, 24, 24);
+    color: white;
+    height: 95vh;
+    padding: 100px;
+    overflow: hidden;
+    padding-top: 80px;
+    padding-bottom: 0px;
+    position: relative;
+    min-width: 350px;
+}
+h1{
+    text-align: center;
+    font-size: 300%;
+}
+div.inputs{
+    font-size: 120%;
+    display: flex;
+    width: fit-content;
+    /* background-color: red; */
+    padding: 50px 30px;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    gap: 50px;
+    height: 30px;
+    padding-top: 50px;
+}
+.input-fields{
+    outline: none;
+    width: 120px;
+    height:fit-content;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    
+
+}
+.inputs .input-box{
+    /* background-color: purple; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;    
+}
+.button-box{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 400px;
+    padding: 15px 20px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.button-box .btn{
+    outline: none;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 4px;
+    padding: 2px;
+    font-size: 14px;
+    text-align: center;
+    font-size: 20px;
+    padding-left: 1px;
+    cursor: pointer;
+}
+.display-box{
+    display: flex;
+    /* background-color: red; */
+    justify-content:space-around;
+    align-items:center;
+    font-size: 1.5rem;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.display-box>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.display{
+    /* width: fit-content; */
+    padding: 0 15px;
+    height: 130px;
+    background:url("./black-texture.jpeg");
+    font-size:100px;
+    text-align: center;
+    border-radius: 12px;
+}
+.button-box .btn.run-timer{
+    /* clip-path: polygon(100% 50%, 0 0, 0 100%); */
+    color: white;
+    background-color: rgb(81, 136, 0);
+}
+.btn.run-timer>p{
+    text-align: center;
+}
+.timesup {
+    color: white;
+    width: 50%;
+    background-color: rgb(81, 136, 0);
+    margin: 0 auto;
+    position: absolute;
+    bottom: 50px;
+    left: 10%;
+    right: 10%;
+    transform: translateX(-50%);
+    text-align: center;
+    transition: transform 0.5s ease;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.timesup.show {
+    transform: translateY(-50%); /* Move it up when the timer ends */
+    opacity: 1;
+}
+@media screen  and (max-width: 700px)
+{
+    .button-box{
+        width: 300px;
+    }
+    h1{
+        font-size: 200%;
+    }
+    .display{
+        height: 100px;
+        font-size:80px;
+    }
+    div.inputs{
+        padding: 50px 15px;
+    }
+}
+@media screen  and (max-width: 500px)
+{
+    .button-box{
+        width: 300px;
+    }
+    h1{
+        font-size: 200%;
+    }
+    .display{
+        height: 80px;
+        font-size:60px;
+    }
+    div.inputs{
+        padding: 50px 15px;
+    }
+}
